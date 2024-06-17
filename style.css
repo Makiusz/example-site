@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+main{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 85%;
+    padding: 60px 0;
+}
+header{
+    width: 100%;
+    height: 10%;
+    padding: 5px 20px;
+    box-shadow: 0px 10px 41px -8px rgba(0,0,0,0.75);
+    min-height: 50px;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a img{
+    width: auto;
+    max-height: 50px;
+    padding: 5px;
+}
+footer,nav ul, figure{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+footer{
+    padding: 10px;
+
+}
+figure{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 53, 87, 0.65);
+    background-image: url('https://images.unsplash.com/photo-1556709911-93a82c864ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0px 10px 41px -8px rgba(0,0,0,0.5);
+    flex-basis: 250px;
+
+    padding: 20px;
+}
+figcaption{
+    background: rgba(0,0,0,0.75);
+    color: aliceblue;
+    
+    font-size: .75rem;
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+figcaption a{
+    color: coral;
+}
+nav li{
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    white-space: nowrap
+}
+h1{
+    color: white;
+}
+h2{
+  margin: 30px 0 10px;
+}
+ul{
+    padding: 20px;
+}
+#social_media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#social_media *{
+    width: 40px;
+    margin: 5px;
+    height: auto;
+    transition: filter 1s ease-out;
+}
+#social_media img:hover{
+    filter: grayscale(100%);
+}
